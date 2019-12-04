@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
+/*inte för specifika*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: $font--main;
+}
+
+.company-logo {
+  font-family: $font--company;
+  padding: 20px;
+  color: $color--title-1;
+  align-self: center;
+  align-items: center;
+  justify-items: center;
+
+  p {
+    font-size: 27px;
+  }
+}
+
+h1 {
+  color: $color--title-1;
+  font-size: 34px;
+  margin: inherit;
+  margin-left: 0;
+  @media (min-width: 600px) {
+    font-size: 52px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  align-self: center;
+  justify-self: center;
+  color: $color--title-2;
+
+  @media (min-width: 600px) {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: $color--title-2;
+  @media (min-width: 600px) {
+    font-size: 36px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  @media (min-width: 900px) {
+    font-size: 24px;
+  }
+}
+
+p {
+  margin: 0;
+  letter-spacing: 0.63px;
+  line-height: 26px;
+  font-size: 14px;
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
