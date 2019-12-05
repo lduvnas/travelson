@@ -1,32 +1,32 @@
 /* Second Section */
-.company-logos {
-  background-color: $color--main-1;
-  padding: 10px;
+.social-media {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-items: center;
-
+  background-color: $color--main-1;
+  padding: 10px;
+  padding-bottom: 40px;
   @media (min-width: 900px) {
     padding: 60px;
   }
-
   h3 {
     color: $color--title-1;
+    letter-spacing: 0.92px;
+    margin-bottom: 25px;
   }
-
-  .logo-container {
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-    .logo-item {
-      margin: 10px;
+    &__item {
+      margin: 7px;
       min-height: 90px;
       min-width: 90px;
       max-width: 170px;
       max-height: 170px;
-      flex-basis: 15vw;
+      flex-basis: 20vw;
       border: 4px solid white;
     }
   }

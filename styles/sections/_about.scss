@@ -1,5 +1,5 @@
 /* Fourth Section */
-.about-section {
+.about {
   background-color: $color--main-1;
   display: grid;
   grid-template-columns: none;
@@ -9,26 +9,28 @@
     grid-template-rows: none;
   }
 
-  .about-text {
-    max-width: 80%;
-    justify-self: center;
-    align-self: center;
-
+  &__text-box {
+    max-width: 90%;
+    @include justify-align-self(center, center);
     p {
       color: $color--section-background;
+      line-height: normal;
     }
     h4 {
+      margin-top: 40px;
+      margin-bottom: 13px;
       color: $color--title-1;
     }
   }
 
-  .about-img {
+  &__img {
     grid-row: 2;
-    margin-top: 20px;
-    min-width: 70%;
+    margin-top: 43px;
+    min-width: 100%;
     @media (min-width: 900px) {
       grid-row: 1;
       margin: 0;
+      min-width: 70%;
     }
   }
 }

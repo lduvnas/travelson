@@ -1,5 +1,5 @@
 .navbar {
-  padding: 10px;
+  padding: 15px;
   width: 100%;
   background-color: $color--main-1;
   display: flex;
@@ -10,15 +10,17 @@
   }
 
   .nav-links {
-    padding: 10px;
+    transition: all 1s ease-in-out;
+    padding: 5px;
     list-style-type: none;
     display: flex;
+    margin-bottom: 0;
 
     a {
       text-decoration: none;
       color: #eaddd9;
       font-weight: bold;
-      padding: 0px 7px;
+      padding: 0px 13px;
       font-size: 14px;
       @media (min-width: 600px) {
         font-size: 16px;
@@ -29,36 +31,46 @@
 }
 
 .banner {
+  transition: all 3s ease-in-out;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  @include justify-align-content(center, center);
   background-image: radial-gradient(
       circle at 50% 0,
-      rgba(57, 73, 81, 0.5),
-      rgba(12, 32, 42, 0.5) 74%
+      rgba(57, 73, 81, 0.7),
+      rgba(12, 32, 42, 0.7) 74%
     ),
-    url("/images/header/header-large.jpg");
+    url("/images/header/header-small.jpg");
   height: 50vw;
-  min-height: 470px;
+  min-height: 480px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-width: 600px) {
-    align-items: center;
-    justify-content: flex-start;
+    background-image: radial-gradient(
+        circle at 50% 0,
+        rgba(57, 73, 81, 0.7),
+        rgba(12, 32, 42, 0.7) 74%
+      ),
+      url("/images/header/header-large.jpg");
+    @include justify-align-content(center, flex-start);
   }
 
   .banner-text {
+    transition: all 300ms ease-in-out;
     color: #f0f0f0;
     text-align: center;
     font-weight: 700;
     max-width: 600px;
     margin: 0px;
-    padding: 30px;
+    padding: 35px;
     font-size: 16px;
     @media (min-width: 600px) {
       font-size: 17px;
       margin-left: 7vw;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }

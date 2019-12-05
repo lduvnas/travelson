@@ -11,12 +11,8 @@ body {
 
 .company-logo {
   font-family: $font--company;
-  padding: 20px;
   color: $color--title-1;
   align-self: center;
-  align-items: center;
-  justify-items: center;
-
   p {
     font-size: 27px;
   }
@@ -24,7 +20,8 @@ body {
 
 h1 {
   color: $color--title-1;
-  font-size: 34px;
+  font-size: 27px;
+  letter-spacing: 1px;
   margin: inherit;
   margin-left: 0;
   @media (min-width: 600px) {
@@ -35,8 +32,6 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: 700;
-  align-self: center;
-  justify-self: center;
   color: $color--title-2;
 
   @media (min-width: 600px) {
@@ -44,17 +39,27 @@ h2 {
   }
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 1.11px;
+}
+
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   color: $color--title-2;
+  margin-bottom: 3px;
+  letter-spacing: 0.92px;
   @media (min-width: 600px) {
     font-size: 36px;
   }
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   @media (min-width: 900px) {
     font-size: 24px;
   }

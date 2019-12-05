@@ -8,6 +8,7 @@
   gap: 1em;
   justify-items: center;
   align-items: center;
+  margin-bottom: 15px;
   @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
@@ -15,18 +16,25 @@
   }
 
   h4 {
+    margin-top: 31px;
+    margin-bottom: 13px;
     color: $color--title-2;
+  }
+  p {
+    line-height: normal;
+    margin-bottom: 43px;
   }
 }
 
 .img-wrap {
+  transition: all 200ms ease-in-out;
   display: grid;
   gap: 1em;
-  min-height: 400px;
+  min-height: 300px;
   min-width: 100%;
   @media (min-width: 500px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1em;
   }
 }
@@ -35,14 +43,12 @@
 .image-three-wrapper,
 .image-four-wrapper {
   position: relative;
-  height: 100%;
-  width: 100%;
+  @extend %general-size;
 
   img {
     display: block;
     object-fit: cover;
-    height: 100%;
-    width: 100%;
+    @extend %general-size;
     max-width: 100%;
     max-height: 100%;
     position: absolute;

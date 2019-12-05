@@ -1,0 +1,16 @@
+/*Mixins and extendtions*/
+
+@mixin justify-align-content($align-value, $justify-value) {
+  justify-content: $justify-value;
+  align-items: $align-value;
+}
+
+@mixin justify-align-self($align-value, $justify-value) {
+  justify-self: $justify-value;
+  align-self: $align-value;
+}
+
+%general-size {
+  height: 100%;
+  width: 100%;
+}
