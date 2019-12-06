@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Unica+One&display=swap");
-/*inte för specifika*/
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +15,7 @@ body {
   align-self: center;
   p {
     font-size: 27px;
+    margin-bottom: 10px;
   }
 }
 

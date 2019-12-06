@@ -14,13 +14,13 @@
     padding: 5px;
     list-style-type: none;
     display: flex;
-    margin-bottom: 0;
+    margin: 0;
 
     a {
       text-decoration: none;
       color: #eaddd9;
       font-weight: bold;
-      padding: 0px 13px;
+      padding: 0px 9px;
       font-size: 14px;
       @media (min-width: 600px) {
         font-size: 16px;
@@ -31,7 +31,7 @@
 }
 
 .banner {
-  transition: all 3s ease-in-out;
+  transition: all 500ms ease-in-out;
   display: flex;
   @include justify-align-content(center, center);
   background-image: radial-gradient(
